@@ -110,6 +110,8 @@ function addMealToDom(meal){
     </div>
     </div>
     `;
+    var elmntToView = document.getElementById("single-meal");
+elmntToView.scrollIntoView(); 
 }
 
 
@@ -132,4 +134,6 @@ mealsEl.addEventListener('click',e => {
      const mealID=mealInfo.getAttribute('data-mealid');
      getMealById(mealID);
  }   
+    var elmntToView = document.getElementById("single-meal");
+elmntToView.scrollIntoView(); 
 });
